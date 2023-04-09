@@ -1,0 +1,53 @@
+:root {
+  --yellow: #ccb31f;
+  --teal: #1c6e73;
+  --blue: #003f5c;
+  --background: #fafafa;
+  --text: #333333;
+}
+
+html {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--teal);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header a,
+header a:link,
+header a:visited,
+header a:active {
+  text-decoration: none;
+  color: var(----blue);
+}
+
+header img {
+  height: 50px;
+}
+
+h1 {
+  display: inline;
+  margin: 0 0.5em;
+}
+
+nav > span {
+  padding: 0.75em 1em;
+  margin-top: 0.5em;
+  display: inline-block;
+}
+
+nav > span:hover {
+  background-color: var(--teal);
+  color: var(--background);
+  cursor: pointer;
+}
