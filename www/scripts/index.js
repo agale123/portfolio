@@ -35,7 +35,7 @@ for (const card of CARDS) {
     document.querySelectorAll(".card").forEach((c) => {
       if (c !== cardEl) {
         c.classList.remove("expanded");
-        c.querySelector(".overlay").innerText = "";
+        c.querySelector(".overlay").innerText = "+";
       }
     });
     if (!cardEl.classList.contains("expanded")) {
