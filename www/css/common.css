@@ -63,20 +63,20 @@ nav > a:hover {
 
 /* Social links */
 .links {
-    justify-content: end;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .links a,
-  .links a:link,
-  .links a:visited,
-  .links a:active {
-    text-decoration: none;
-    color: var(--text);
-  }
-  
-  .links svg {
-    height: 36px;
-    padding: 4px;
-  }
+  justify-content: end;
+  display: flex;
+  flex-direction: row;
+}
+
+.links a,
+.links a:link,
+.links a:visited,
+.links a:active {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.links svg {
+  height: 36px;
+  padding: 4px;
+}

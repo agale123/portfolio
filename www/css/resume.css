@@ -1,43 +1,81 @@
 .bio {
-    display: flex;
-    flex-direction: row;
-    margin: 16px;
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
 }
 
 .bio img {
-    width: 160px;
-    height: 160px;
-    border-radius: 80px;
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
 }
 
 .bio-right {
-    margin: 16px;
-    display: flex;
-    flex-direction: column;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .bio-right div:first-child {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .blurb {
-    display: flex;
-    align-items: center;
-    margin-right: 16px;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  flex-direction: column;
+  background-color: var(--background);
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 16px;
+}
+
+.blurb .top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.blurb .bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.blurb .bottom p {
+  margin-bottom: 0;
+}
+
+.blurb .links svg {
+  padding: 0;
 }
 
 .blurb img {
-    width: 64px;
-    padding: 16px;
+  width: 64px;
+  padding: 16px;
 }
 
+.blurb img.wide {
+    width: 256px;
+    padding: 16px;
+  }
+
 h3 {
-   display: flex;
-   justify-content: space-between; 
-   margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
 h4 {
-    margin: 0;
-    opacity: 0.6;
+  margin: 0;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 600px) {
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
 }
