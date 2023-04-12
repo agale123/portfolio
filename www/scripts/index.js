@@ -1,7 +1,3 @@
-function anchor(url, innerHTML) {
-  return `<a href='${url}' target='_blank'>${innerHTML}</a>`;
-}
-
 // Create project cards
 const container = document.querySelector(".container");
 for (const card of CARDS) {

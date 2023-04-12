@@ -1,0 +1,43 @@
+.bio {
+    display: flex;
+    flex-direction: row;
+    margin: 16px;
+}
+
+.bio img {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+}
+
+.bio-right {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bio-right div:first-child {
+    flex-grow: 1;
+}
+
+.blurb {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.blurb img {
+    width: 64px;
+    padding: 16px;
+}
+
+h3 {
+   display: flex;
+   justify-content: space-between; 
+   margin-bottom: 0;
+}
+
+h4 {
+    margin: 0;
+    opacity: 0.6;
+}
