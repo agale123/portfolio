@@ -39,24 +39,70 @@ const CARDS = [
         "twitter": "https://twitter.com/agale137/status/1624226213484204035",
         "github": "https://github.com/agale123/data-viz/tree/main/enchantments-lottery",
     },
-    // Quick turnarounds
-    // 2023 NWSL schedule
-    // 2022 NWSL Draftee minutes
+    {
+        "title": "2023 Gaps Between Games",
+        "img": "2023_gaps_between_games.png",
+        "twitter": "https://twitter.com/agale137/status/1623409901488975872",
+        "github": "https://github.com/agale123/soccer-analytics/tree/main/schedule-infographic",
+    },
+    {
+        "title": "NWSL Season Heatmap",
+        "img": "2023_season.png",
+        "twitter": "https://twitter.com/agale137/status/1623409489520242689",
+        "github": "https://github.com/agale123/soccer-analytics/tree/main/schedule-infographic",
+    },
+    {
+        "title": "NWSL Draftee Minutes",
+        "img": "2022_draftee_minutes.png",
+        "twitter": "https://twitter.com/agale137/status/1613207527688396801",
+        "github": "https://github.com/agale123/soccer-analytics/tree/main/draft",
+    },
     {
         "title": "OL Reign Score Progression",
         "img": "reign_score_progression.png",
         "twitter": "https://twitter.com/agale137/status/1598827570786861059",
         "github": "https://github.com/agale123/soccer-analytics/tree/main/score-waterfall",
     },
-    // Goal scoring combos
-    // World cup schedule explorer
-    // 5 week moving average
-    // Golden boot race
+    {
+        "title": "Goal Scoring Combos",
+        "img": "goal_assist_combos.png",
+        "twitter": "https://twitter.com/agale137/status/1588909000774631424",
+        "github": "https://github.com/agale123/soccer-analytics/tree/main/goal-assist-combos",
+    },
+    {
+        "title": "2023 World Cup Schedule Explorer",
+        "img": "world_cup_website.png",
+        "github": "https://github.com/agale123/world-cup-2023",
+        "link": "https://2023wwc.alisongale.com/",
+    },
+    {
+        "title": "Moving Window Points",
+        "img": "moving_window_points.png",
+        "twitter": "https://twitter.com/agale137/status/1581332881770962944",
+        "github": "https://github.com/agale123/soccer-analytics/tree/main/moving-window-points",
+    },
+    {
+        "title": "Golden Boot Race",
+        "img": "golden_boot.png",
+        "twitter": "https://twitter.com/agale137/status/1578428929668714497",
+        "github": "https://github.com/agale123/soccer-analytics/tree/main/golden-boot",
+    },
     {
         "title": "NWSL 2022 Standings",
         "img": "nwsl_2022_standings.jpg",
+        "twitter": "https://twitter.com/agale137/status/1576724797165555712",
+        "github": "https://github.com/agale123/soccer-analytics/tree/main/nwsl-rank",
     },
-    // Decision day
-    // PLayoff odds
-    // Pass analyzer
+    {
+        "title": "Decision Day Simulation",
+        "img": "decision_day.gif",
+        "twitter": "https://twitter.com/agale137/status/1576726367445848064",
+        "github": "https://github.com/agale123/soccer-analytics/tree/main/playoff-possibilities",
+    },
+    {
+        "title": "Pass Analyzer",
+        "img": "pass_analyzer.png",
+        "github": "https://github.com/agale123/wisd",
+        "link": "https://wisd.alisongale.com/",
+    },
 ];

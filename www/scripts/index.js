@@ -1,3 +1,7 @@
+function anchor(url, innerHTML) {
+  return `<a href='${url}' target='_blank'>${innerHTML}</a>`;
+}
+
 // Create project cards
 const container = document.querySelector(".container");
 for (const card of CARDS) {
@@ -8,7 +12,7 @@ for (const card of CARDS) {
     <div class="contents">
       <img src="images/${card.img}" />
       <div class="details">
-      <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" fill="currentColor"/></svg>
+        ${CLOSE}
         <h3>${card.title}</h3>
         <div class="desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -17,8 +21,9 @@ for (const card of CARDS) {
           nisi ut aliquip ex ea commodo consequat.
         </div>
         <div class="links">
-            <img src="images/github.png" />
-            <img src="images/twitter.png" />
+          ${card.link ? anchor(card.link, LINK) : ''}
+          ${card.github ? anchor(card.github, GITHUB) : ''}
+          ${card.twitter ? anchor(card.twitter, TWITTER) : ''}
         </div>
       </div>
     </div>
@@ -31,6 +36,7 @@ for (const card of CARDS) {
   });
   // Handle expand click events
   cardEl.addEventListener("click", () => {
+    console.log("click");
     // Close any other open cards
     document.querySelectorAll(".card").forEach((c) => {
       if (c !== cardEl) {
