@@ -78,4 +78,13 @@ h4 {
     flex-direction: column;
     align-items: center;
   }
+
+  .blurb .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top h3 {
+    flex-direction: column;
+  }
 }
