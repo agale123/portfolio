@@ -1,6 +1,7 @@
 .hobbies {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .column {
@@ -14,8 +15,18 @@
   padding: 16px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
+  .hobbies img {
+    width: 300px;
+  }
+
   .hobbies {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 680px) {
+  .hobbies img {
+    width: 200px;
   }
 }
