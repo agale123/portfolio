@@ -5,7 +5,7 @@ for (const card of CARDS) {
   cardEl.style.display = "none";
   cardEl.classList.add("card");
   cardEl.innerHTML = `
-    <div class="overlay">+</div>
+    <div class="overlay"><div class="plus">+</div></div>
     <div class="contents">
       <img src="images/${card.img}" />
       <div class="details">

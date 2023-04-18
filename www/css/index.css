@@ -27,10 +27,10 @@
   opacity: 0;
   cursor: pointer;
   color: var(--background);
-  vertical-align: middle;
-  text-align: center;
-  line-height: 225px;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .overlay:hover {
@@ -45,6 +45,10 @@
   transition: all 0.5s ease-in-out;
   opacity: 0.3;
   font-size: 300px;
+}
+
+.plus {
+  margin-bottom: 16px;
 }
 
 .card img {
