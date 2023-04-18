@@ -5,7 +5,7 @@ for (const card of CARDS) {
   cardEl.style.display = "none";
   cardEl.classList.add("card");
   cardEl.innerHTML = `
-    <div class="overlay"><div class="plus">+</div></div>
+    <div class="overlay">${PLUS}</div>
     <div class="contents">
       <img src="images/${card.img}" />
       <div class="details">
@@ -29,9 +29,8 @@ for (const card of CARDS) {
   };
 
   // Handle close click events
-  cardEl.querySelector("svg").addEventListener("click", (e) => {
+  cardEl.querySelector(".details svg").addEventListener("click", (e) => {
     cardEl.classList.remove("expanded");
-    cardEl.querySelector(".overlay").innerText = "+";
     e.stopPropagation();
   });
 
@@ -47,7 +46,6 @@ for (const card of CARDS) {
         if (c.classList.contains("expanded")) {
           c.addEventListener("transitionend", resolve, { once: true });
           c.classList.remove("expanded");
-          c.querySelector(".overlay").innerText = "+";
           return true;
         }
       });
@@ -81,7 +79,6 @@ for (const card of CARDS) {
       setTimeout(() => {
         if (!cardEl.classList.contains("expanded")) {
           cardEl.classList.add("expanded");
-          cardEl.querySelector(".overlay").innerText = "";
         }
       });
     });
