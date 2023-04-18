@@ -54,17 +54,15 @@
 
 .blurb img {
   width: 64px;
-  padding: 16px;
+  padding: 16px 16px 0 16px;
 }
 
 .blurb img.wide {
   width: 256px;
-  padding: 16px;
 }
 
 .blurb img.medium {
   width: 180px;
-  padding: 16px;
 }
 
 h3 {
@@ -76,6 +74,12 @@ h3 {
 h4 {
   margin: 0;
   opacity: 0.6;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
