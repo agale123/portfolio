@@ -3,6 +3,7 @@ const container = document.querySelector(".container");
 for (const card of CARDS) {
   const cardEl = document.createElement("div");
   cardEl.classList.add("card");
+  const description = card.desc ?? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  enim ad minim veniam, quis nostrud exercitation ullamco labori  nisi ut aliquip ex ea commodo consequat.";
   cardEl.innerHTML = `
     <div class="overlay">+</div>
     <div class="contents">
@@ -11,10 +12,7 @@ for (const card of CARDS) {
         ${CLOSE}
         <h3>${card.title}</h3>
         <div class="desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
+          ${description}
         </div>
         <div class="links">
           ${card.link ? anchor(card.link, LINK) : ''}
@@ -32,7 +30,6 @@ for (const card of CARDS) {
   });
   // Handle expand click events
   cardEl.addEventListener("click", () => {
-    console.log("click");
     // Close any other open cards
     document.querySelectorAll(".card").forEach((c) => {
       if (c !== cardEl) {

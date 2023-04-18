@@ -14,6 +14,7 @@ const CARDS = [
         "img": "womens_march_madness.png",
         "github": "https://github.com/agale123/data-viz/tree/main/march-madness",
         "link": "https://wbb.alisongale.com",
+        "desc": "My description"
     },
     {
         "title": "Portland: Road to 100 Wins",
