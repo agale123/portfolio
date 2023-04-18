@@ -42,37 +42,48 @@ for (const card of CARDS) {
     );
 
     // Close any other open cards
-    otherCards.forEach((c) => {
-      c.classList.remove("expanded");
-      c.querySelector(".overlay").innerText = "+";
-    });
-
-    // Get other cards on the same row
-    const elsOnRow = [];
-    const cardTop = cardEl.getBoundingClientRect().top;
-    otherCards.forEach((c) => {
-      if (c.getBoundingClientRect().top === cardTop) {
-        elsOnRow.push(c);
+    const animating = new Promise((resolve, reject) => {
+      const open = otherCards.find((c) => {
+        if (c.classList.contains("expanded")) {
+          c.addEventListener("transitionend", resolve, { once: true });
+          c.classList.remove("expanded");
+          c.querySelector(".overlay").innerText = "+";
+          return true;
+        }
+      });
+      if (!open) {
+        resolve();
       }
     });
 
-    // Move the card to the beginning of the row
-    const parent = cardEl.parentElement;
-    const allCards = [...parent.children];
-    const cardIndex = allCards.indexOf(cardEl);
-    const otherIndices = elsOnRow.map((el) => allCards.indexOf(el));
-    if (cardIndex > Math.min(...otherIndices)) {
-      parent.removeChild(cardEl);
-      parent.insertBefore(cardEl, elsOnRow[0]);
-    }
+    animating.then(() => {
+      // Get other cards on the same row
+      const elsOnRow = [];
+      const cardTop = cardEl.getBoundingClientRect().top;
+      otherCards.forEach((c) => {
+        if (c.getBoundingClientRect().top === cardTop) {
+          elsOnRow.push(c);
+        }
+      });
 
-    // Expand the card
-    // Use setTimeout so the card gets rendered collapsed before animating open.
-    setTimeout(() => {
-      if (!cardEl.classList.contains("expanded")) {
-        cardEl.classList.add("expanded");
-        cardEl.querySelector(".overlay").innerText = "";
+      // Move the card to the beginning of the row
+      const parent = cardEl.parentElement;
+      const allCards = [...parent.children];
+      const cardIndex = allCards.indexOf(cardEl);
+      const otherIndices = elsOnRow.map((el) => allCards.indexOf(el));
+      if (cardIndex > Math.min(...otherIndices)) {
+        parent.removeChild(cardEl);
+        parent.insertBefore(cardEl, elsOnRow[0]);
       }
+
+      // Expand the card
+      // Use setTimeout so the card gets rendered collapsed before animating open.
+      setTimeout(() => {
+        if (!cardEl.classList.contains("expanded")) {
+          cardEl.classList.add("expanded");
+          cardEl.querySelector(".overlay").innerText = "";
+        }
+      });
     });
   });
   container.appendChild(cardEl);
