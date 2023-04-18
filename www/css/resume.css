@@ -58,9 +58,14 @@
 }
 
 .blurb img.wide {
-    width: 256px;
-    padding: 16px;
-  }
+  width: 256px;
+  padding: 16px;
+}
+
+.blurb img.medium {
+  width: 180px;
+  padding: 16px;
+}
 
 h3 {
   display: flex;

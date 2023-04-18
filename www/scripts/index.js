@@ -2,8 +2,8 @@
 const container = document.querySelector(".container");
 for (const card of CARDS) {
   const cardEl = document.createElement("div");
+  cardEl.style.display = "none";
   cardEl.classList.add("card");
-  const description = card.desc ?? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  enim ad minim veniam, quis nostrud exercitation ullamco labori  nisi ut aliquip ex ea commodo consequat.";
   cardEl.innerHTML = `
     <div class="overlay">+</div>
     <div class="contents">
@@ -12,35 +12,68 @@ for (const card of CARDS) {
         ${CLOSE}
         <h3>${card.title}</h3>
         <div class="desc">
-          ${description}
+          ${card.desc}
         </div>
         <div class="links">
-          ${card.link ? anchor(card.link, LINK) : ''}
-          ${card.github ? anchor(card.github, GITHUB) : ''}
-          ${card.twitter ? anchor(card.twitter, TWITTER) : ''}
+          ${card.link ? anchor(card.link, LINK) : ""}
+          ${card.github ? anchor(card.github, GITHUB) : ""}
+          ${card.twitter ? anchor(card.twitter, TWITTER) : ""}
         </div>
       </div>
     </div>
     `;
+
+  // Hide cards till the images load
+  cardEl.querySelector("img").onload = () => {
+    cardEl.style.display = "block";
+  };
+
   // Handle close click events
   cardEl.querySelector("svg").addEventListener("click", (e) => {
     cardEl.classList.remove("expanded");
     cardEl.querySelector(".overlay").innerText = "+";
     e.stopPropagation();
   });
+
   // Handle expand click events
   cardEl.addEventListener("click", () => {
+    const otherCards = [...document.querySelectorAll(".card").values()].filter(
+      (c) => c !== cardEl
+    );
+
     // Close any other open cards
-    document.querySelectorAll(".card").forEach((c) => {
-      if (c !== cardEl) {
-        c.classList.remove("expanded");
-        c.querySelector(".overlay").innerText = "+";
+    otherCards.forEach((c) => {
+      c.classList.remove("expanded");
+      c.querySelector(".overlay").innerText = "+";
+    });
+
+    // Get other cards on the same row
+    const elsOnRow = [];
+    const cardTop = cardEl.getBoundingClientRect().top;
+    otherCards.forEach((c) => {
+      if (c.getBoundingClientRect().top === cardTop) {
+        elsOnRow.push(c);
       }
     });
-    if (!cardEl.classList.contains("expanded")) {
-      cardEl.classList.add("expanded");
-      cardEl.querySelector(".overlay").innerText = "";
+
+    // Move the card to the beginning of the row
+    const parent = cardEl.parentElement;
+    const allCards = [...parent.children];
+    const cardIndex = allCards.indexOf(cardEl);
+    const otherIndices = elsOnRow.map((el) => allCards.indexOf(el));
+    if (cardIndex > Math.min(...otherIndices)) {
+      parent.removeChild(cardEl);
+      parent.insertBefore(cardEl, elsOnRow[0]);
     }
+
+    // Expand the card
+    // Use setTimeout so the card gets rendered collapsed before animating open.
+    setTimeout(() => {
+      if (!cardEl.classList.contains("expanded")) {
+        cardEl.classList.add("expanded");
+        cardEl.querySelector(".overlay").innerText = "";
+      }
+    });
   });
   container.appendChild(cardEl);
 }
