@@ -1,0 +1,12 @@
+dispatch:
+  - url: "wbb.alisongale.com/*"
+    service: womens-march-madness
+
+  - url: "aomnl.alisongale.com/*"
+    service: aomnl
+
+  - url: "cancerinequality.alisongale.com/*"
+    service: cancer-inequality
+
+  - url: "*/*"
+    service: default
