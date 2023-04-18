@@ -36,9 +36,7 @@
 .overlay:hover {
   background: linear-gradient(
     45deg,
-    var(--yellow) 20%,
-    var(--teal),
-    80%,
+    var(--teal) 30%,
     var(--blue) 100%
   );
   border-radius: 8px;
