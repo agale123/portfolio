@@ -9,6 +9,18 @@ const CARDS = [
         "link": "",
     },
     */
+    {
+      title: "Substitution Patterns",
+      img: "2022_substitution.png",
+      github: "https://github.com/agale123/soccer-analytics/tree/main/substitutions",
+      twitter: "https://twitter.com/agale137/status/1649613559238889473",
+      desc: `
+        I looked back at how teams differed in their substitution patterns in 2022. Some
+        teams, like San Diego, started subbing early while other teams, like North Carolina, waited
+        the longest before subbing. Angel City rarely used their fifth
+        substitute while Houston almost always did.
+      `,
+    },
   {
     title: "Women's March Madness",
     img: "womens_march_madness.png",
