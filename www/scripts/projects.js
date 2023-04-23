@@ -9,18 +9,33 @@ const CARDS = [
         "link": "",
     },
     */
-    {
-      title: "Substitution Patterns",
-      img: "2022_substitution.png",
-      github: "https://github.com/agale123/soccer-analytics/tree/main/substitutions",
-      twitter: "https://twitter.com/agale137/status/1649613559238889473",
-      desc: `
+  {
+    title: "Goal Build-up",
+    img: "4-23-RGN-goal5.png",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/goal-buildup",
+    twitter: "https://twitter.com/agale137/status/1650170628719403008",
+    desc: `
+        I wanted to highlight fun build-up plays that lead to goals. This example
+        shows the 5th goal from the Reign's 5-2 win over Chicago. The play began
+        with Tullis-Joyce handling a tricky back pass. Huerta did a give-and-go
+        with Sonnett before dribbling down field and passing to Balcer. Balcer
+        sent in a cross to Fishlock who scored her second goal of the match.
+      `,
+  },
+  {
+    title: "Substitution Patterns",
+    img: "2022_substitution.png",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/substitutions",
+    twitter: "https://twitter.com/agale137/status/1649613559238889473",
+    desc: `
         I looked back at how teams differed in their substitution patterns in 2022. Some
         teams, like San Diego, started subbing early while other teams, like North Carolina, waited
         the longest before subbing. Angel City rarely used their fifth
         substitute while Houston almost always did.
       `,
-    },
+  },
   {
     title: "Women's March Madness",
     img: "womens_march_madness.png",
