@@ -24,6 +24,21 @@ const CARDS = [
       `,
   },
   {
+    title: "NWSL 2023 Standings",
+    img: "2023week4.png",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/nwsl-rank",
+    twitter: "",
+    desc: `
+        Refreshed my popular 2022 NWSL Standings bump chart to add more data about
+        wins/losses and goals for/against. The left side shows how the standings
+        have changed each week, while the right side shows the current season
+        stats. The bump chart now has thinner lines between weeks so it is
+        easier to see movement with overlapping lines. Used cubic splines for
+        better looking curves between weeks.
+      `,
+  },
+  {
     title: "Substitution Patterns",
     img: "2022_substitution.png",
     github:
