@@ -10,6 +10,20 @@ const CARDS = [
     },
     */
   {
+    title: "NWSL 2023 Standings",
+    img: "2023week4.png",
+    github: "https://github.com/agale123/soccer-analytics/tree/main/nwsl-rank",
+    twitter: "https://twitter.com/agale137/status/1650320203434323970",
+    desc: `
+          Refreshed my popular 2022 NWSL Standings bump chart to add more data about
+          wins/losses and goals for/against. The left side shows how the standings
+          have changed each week, while the right side shows the current season
+          stats. The bump chart now has thinner lines between weeks so it is
+          easier to see movement with overlapping lines. Used cubic splines for
+          better looking curves between weeks.
+        `,
+  },
+  {
     title: "Goal Build-up",
     img: "4-23-RGN-goal5.png",
     github:
@@ -23,21 +37,7 @@ const CARDS = [
         sent in a cross to Fishlock who scored her second goal of the match.
       `,
   },
-  {
-    title: "NWSL 2023 Standings",
-    img: "2023week4.png",
-    github:
-      "https://github.com/agale123/soccer-analytics/tree/main/nwsl-rank",
-    twitter: "",
-    desc: `
-        Refreshed my popular 2022 NWSL Standings bump chart to add more data about
-        wins/losses and goals for/against. The left side shows how the standings
-        have changed each week, while the right side shows the current season
-        stats. The bump chart now has thinner lines between weeks so it is
-        easier to see movement with overlapping lines. Used cubic splines for
-        better looking curves between weeks.
-      `,
-  },
+
   {
     title: "Substitution Patterns",
     img: "2022_substitution.png",
