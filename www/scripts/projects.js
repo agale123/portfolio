@@ -25,7 +25,7 @@ const CARDS = [
   },
   {
     title: "Goal Build-up",
-    img: "4-23-RGN-goal5.png",
+    img: "4-22-RGN-goal5.png",
     github:
       "https://github.com/agale123/soccer-analytics/tree/main/goal-buildup",
     twitter: "https://twitter.com/agale137/status/1650170628719403008",
