@@ -10,18 +10,32 @@ const CARDS = [
     },
     */
   {
+    title: "1,000 NWSL Matches",
+    img: "1000_matches.png",
+    github: "https://github.com/agale123/soccer-analytics/tree/main/1000-games",
+    twitter: "https://twitter.com/agale137/status/1652488060385525760",
+    desc: `
+      The Racing Louisville v OL Reign game on April 29, 2023 marked the 1,000th
+      regular season NWSL game. This was my first attempt at generative art,
+      using data from all 1,000 matches. Teams are represented by ovals that are
+      oriented and sized to represent goals scored and season performance. I
+      also created zoomed in views of individual matches to highlight
+      high-scoring results and the first ever NWSL match.
+    `,
+  },
+  {
     title: "NWSL 2023 Standings",
     img: "2023week4.png",
     github: "https://github.com/agale123/soccer-analytics/tree/main/nwsl-rank",
     twitter: "https://twitter.com/agale137/status/1650320203434323970",
     desc: `
-          Refreshed my popular 2022 NWSL Standings bump chart to add more data about
-          wins/losses and goals for/against. The left side shows how the standings
-          have changed each week, while the right side shows the current season
-          stats. The bump chart now has thinner lines between weeks so it is
-          easier to see movement with overlapping lines. Used cubic splines for
-          better looking curves between weeks.
-        `,
+      Refreshed my popular 2022 NWSL Standings bump chart to add more data about
+      wins/losses and goals for/against. The left side shows how the standings
+      have changed each week, while the right side shows the current season
+      stats. The bump chart now has thinner lines between weeks so it is
+      easier to see movement with overlapping lines. Used cubic splines for
+      better looking curves between weeks.
+    `,
   },
   {
     title: "Goal Build-up",
@@ -30,12 +44,12 @@ const CARDS = [
       "https://github.com/agale123/soccer-analytics/tree/main/goal-buildup",
     twitter: "https://twitter.com/agale137/status/1650170628719403008",
     desc: `
-        I wanted to highlight fun build-up plays that lead to goals. This example
-        shows the 5th goal from the Reign's 5-2 win over Chicago. The play began
-        with Tullis-Joyce handling a tricky back pass. Huerta did a give-and-go
-        with Sonnett before dribbling down field and passing to Balcer. Balcer
-        sent in a cross to Fishlock who scored her second goal of the match.
-      `,
+      I wanted to highlight fun build-up plays that lead to goals. This example
+      shows the 5th goal from the Reign's 5-2 win over Chicago. The play began
+      with Tullis-Joyce handling a tricky back pass. Huerta did a give-and-go
+      with Sonnett before dribbling down field and passing to Balcer. Balcer
+      sent in a cross to Fishlock who scored her second goal of the match.
+    `,
   },
 
   {
@@ -45,11 +59,11 @@ const CARDS = [
       "https://github.com/agale123/soccer-analytics/tree/main/substitutions",
     twitter: "https://twitter.com/agale137/status/1649613559238889473",
     desc: `
-        I looked back at how teams differed in their substitution patterns in 2022. Some
-        teams, like San Diego, started subbing early while other teams, like North Carolina, waited
-        the longest before subbing. Angel City rarely used their fifth
-        substitute while Houston almost always did.
-      `,
+      I looked back at how teams differed in their substitution patterns in 2022. Some
+      teams, like San Diego, started subbing early while other teams, like North Carolina, waited
+      the longest before subbing. Angel City rarely used their fifth
+      substitute while Houston almost always did.
+    `,
   },
   {
     title: "Women's March Madness",
