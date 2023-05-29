@@ -8,5 +8,8 @@ dispatch:
   - url: "cancerinequality.alisongale.com/*"
     service: cancer-inequality
 
+  - url: "barnes.alisongale.com/*"
+    service: barnes
+
   - url: "*/*"
     service: default
