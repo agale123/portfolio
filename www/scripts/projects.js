@@ -9,6 +9,78 @@ const CARDS = [
         "link": "",
     },
     */
+  /*{
+    title: "Women's World Cup History",
+    img: "world_cup_history.png",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/world-cup-history",
+    twitter: "TODO",
+    desc: `
+          See how all the 44 teams who have competed at the Women's World Cup
+          have finished. With an expanded field of 32 teams, the 2023 tournament
+          features 8 debutants. There have been 7 teams who have qualified for
+          every year of the tournament so far. And the United States has been
+          the most successful with 4 victories.
+        `,
+  },*/
+  {
+    title: "NWSL at the 2023 World Cup",
+    img: "sankey_2023.png",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/world-cup-rosters",
+    twitter: "https://twitter.com/agale137/status/1678769142453932032",
+    desc: `
+          Half of the teams in their years Women's World Cup feature an NWSL
+          player. The United States has teh most representation by far, but both
+          Brazil and Canada have very good representation in the NWSL. The OL
+          Reign and Washington Spirit both have the most players featured in the
+          World Cup.
+        `,
+  },
+  {
+    title: "USWNT Pairwise Minutes",
+    img: "uswnt_pairs.png",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/uswnt-pairings",
+    twitter: "https://twitter.com/agale137/status/1677311644391837696",
+    desc: `
+          See how many minutes each pair of players on the USWNT roster have
+          played together since the last Olympics in 2021. Darker lines indicate
+          more shared minutes. You can see which players and combinations of
+          players have a lot of experience together at the national team level.
+          I also posted followups that highlighted only the lines from a single
+          player to get a better view of who they have played with.
+        `,
+  },
+  {
+    title: "200 NWSL Matches",
+    img: "road_to_200.png",
+    github: "https://github.com/agale123/soccer-analytics/tree/main/lu-barnes",
+    link: "https://barnes.alisongale.com",
+    desc: `
+        To commemorate Lauren Barnes being the first player to hit 200 regular
+        season appearances I created a scrollable visualization to highlight
+        her accomplishments. She has played over 17,000 minutes, helped earn
+        three NWSL Shields, and she has been a longtime captain of the team.
+        This visualization shows all the Reign games since 2013 and highlights
+        different statistics as you scroll. Barnes has scored 2 goals and
+        contributed to 58 shutouts.
+      `,
+  },
+  {
+    title: "Points Season Comparison",
+    img: "points_season_comparison.png",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/season-comparison",
+    twitter: "https://twitter.com/agale137/status/1666079768578752513",
+    desc: `
+      This series of plots compares pairs of statistics for each team between
+      two seasons. In this example, the points earned through the first ten
+      matches are compared. This highlights how much the Washington Spirit have
+      improved compared to last season and how fall the Chicago Red Stars have
+      fallen.
+    `,
+  },
   {
     title: "1,000 NWSL Matches",
     img: "1000_matches.png",
