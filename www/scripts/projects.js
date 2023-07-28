@@ -9,12 +9,27 @@ const CARDS = [
         "link": "",
     },
     */
-  /*{
+  {
+    title: "Women's World Cup Projections",
+    img: "group_D_table.png",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/world-cup-misc",
+    twitter: "https://twitter.com/agale137/status/1685049032622710784",
+    desc: `
+            See different possible outcomes for who will make the knockout stage
+            from each group based on how the final matchday shakes out. In Group
+            D there were some particularly fun outcomes with possible 3-way ties
+            that would go down to fair play points. To simplify this chart, it
+            only looks at results where a single team scores but it covers the
+            most common outcomes.
+          `,
+  },
+  {
     title: "Women's World Cup History",
     img: "world_cup_history.png",
     github:
       "https://github.com/agale123/soccer-analytics/tree/main/world-cup-history",
-    twitter: "TODO",
+    twitter: "https://twitter.com/agale137/status/1681371535813271554",
     desc: `
           See how all the 44 teams who have competed at the Women's World Cup
           have finished. With an expanded field of 32 teams, the 2023 tournament
@@ -22,7 +37,7 @@ const CARDS = [
           every year of the tournament so far. And the United States has been
           the most successful with 4 victories.
         `,
-  },*/
+  },
   {
     title: "NWSL at the 2023 World Cup",
     img: "sankey_2023.png",
