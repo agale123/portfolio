@@ -11,5 +11,8 @@ dispatch:
   - url: "barnes.alisongale.com/*"
     service: barnes
 
+  - url: "playoffs.alisongale.com/*"
+    service: playoffs
+
   - url: "*/*"
     service: default
