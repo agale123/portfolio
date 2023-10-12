@@ -10,6 +10,19 @@ const CARDS = [
     },
     */
   {
+    title: "Women's World Cup Minutes",
+    img: "world_cup_minutes.jpg",
+    twitter: "https://twitter.com/agale137/status/1689415373383204865",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/world-cup-misc",
+    desc: `
+            I explored how the USWNT load balanced minutes between players in
+            past tournaments. I found that teams often don't rotate players much
+            in the group stage and when they do it is often forced by card
+            accumulation or in a situation where the team is not at risk of
+            elimination.`,
+  },
+  {
     title: "Women's World Cup Projections",
     img: "group_D_table.png",
     github:

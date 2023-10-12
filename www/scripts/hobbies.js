@@ -1,7 +1,9 @@
 const paths = [
+  "abstract_sunrise.jpg",
   "penguin_party.jpg",
   "double_diamond.jpg",
   "glass_vase.JPG",
+  "blue_orange_baby.jpg",
   "hawaii_hearts.jpg",
   "moose_applique.jpg",
   "ocean_vase.jpg",
@@ -10,6 +12,8 @@ const paths = [
   "reign_glass.jpg",
   "nine_patch.png",
   "quilt_platter.jpg",
+  "tie_dye.jpg",
+  "teal_baby.jpg",
 ];
 
 const columnHeights = [0, 0, 0];
