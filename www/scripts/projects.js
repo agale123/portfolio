@@ -10,17 +10,72 @@ const CARDS = [
     },
     */
   {
+    title: "Evolution of a League",
+    img: "nwsl_evolution.png",
+    twitter: "https://twitter.com/agale137/status/1732404885306438044",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/nwsl-evolution",
+    desc: `
+      The NWSL has been expanding much more quickly and will return to two
+      markets that it had previously left. This visualization highlights how
+      the league has grown over time and how each of the teams have performed.
+      Shield, championship, and cup wins are highlighted for the winning teams.
+    `,
+  },
+  {
+    title: "NWSL Age Demographics",
+    img: "age_demographics.png",
+    twitter: "https://twitter.com/agale137/status/1729904233938612709",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/age-breakdown",
+    desc: `
+      As more players bypass college to enter the NWSL, the demographics of
+      teams will start to skew younger. Interesting patterns can also be seen
+      when comparing the demographics of teams over time to understand how the
+      balance of youth and veterans impacts team performance.
+    `,
+  },
+  {
+    title: "NWSL Season Quilt",
+    img: "season_quilt.png",
+    twitter: "https://twitter.com/agale137/status/1724084468506611906",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/season-quilt",
+    desc: `
+      For my first attempt at a data visualization quilt I embedded details
+      about all 2023 NWSL games (regular season, Challenge Cup, and playoffs)
+      into a quilt design. Each team is represented by a color and the relative
+      sizes of the colors in each block represent which team won the game. The
+      gray squares encode what type of game it was (regular season, playoffs,
+      etc). Click through on the Twitter link to see the final quilt.
+    `,
+  },
+  {
+    title: "NWSL Point Spirals",
+    img: "point_spiral.png",
+    twitter: "https://twitter.com/agale137/status/1713916588481757237",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/points-swirl",
+    desc: `
+      I wanted to visualize how tight the NWSL table was across different
+      seasons. In 2023, there was very little separating the top and bottom
+      teams which was very different from past seasons that had more separation
+      between the top and bottom teams. The spirals show the cumulative point
+      totals for each team across all the past seasons.
+    `,
+  },
+  {
     title: "Women's World Cup Minutes",
     img: "world_cup_minutes.jpg",
     twitter: "https://twitter.com/agale137/status/1689415373383204865",
     github:
       "https://github.com/agale123/soccer-analytics/tree/main/world-cup-misc",
     desc: `
-            I explored how the USWNT load balanced minutes between players in
-            past tournaments. I found that teams often don't rotate players much
-            in the group stage and when they do it is often forced by card
-            accumulation or in a situation where the team is not at risk of
-            elimination.`,
+      I explored how the USWNT load balanced minutes between players in
+      past tournaments. I found that teams often don't rotate players much
+      in the group stage and when they do it is often forced by card
+      accumulation or in a situation where the team is not at risk of
+      elimination.`,
   },
   {
     title: "Women's World Cup Projections",
@@ -29,13 +84,13 @@ const CARDS = [
       "https://github.com/agale123/soccer-analytics/tree/main/world-cup-misc",
     twitter: "https://twitter.com/agale137/status/1685049032622710784",
     desc: `
-            See different possible outcomes for who will make the knockout stage
-            from each group based on how the final matchday shakes out. In Group
-            D there were some particularly fun outcomes with possible 3-way ties
-            that would go down to fair play points. To simplify this chart, it
-            only looks at results where a single team scores but it covers the
-            most common outcomes.
-          `,
+      See different possible outcomes for who will make the knockout stage
+      from each group based on how the final matchday shakes out. In Group
+      D there were some particularly fun outcomes with possible 3-way ties
+      that would go down to fair play points. To simplify this chart, it
+      only looks at results where a single team scores but it covers the
+      most common outcomes.
+    `,
   },
   {
     title: "Women's World Cup History",
@@ -44,12 +99,12 @@ const CARDS = [
       "https://github.com/agale123/soccer-analytics/tree/main/world-cup-history",
     twitter: "https://twitter.com/agale137/status/1681371535813271554",
     desc: `
-          See how all the 44 teams who have competed at the Women's World Cup
-          have finished. With an expanded field of 32 teams, the 2023 tournament
-          features 8 debutants. There have been 7 teams who have qualified for
-          every year of the tournament so far. And the United States has been
-          the most successful with 4 victories.
-        `,
+      See how all the 44 teams who have competed at the Women's World Cup
+      have finished. With an expanded field of 32 teams, the 2023 tournament
+      features 8 debutants. There have been 7 teams who have qualified for
+      every year of the tournament so far. And the United States has been
+      the most successful with 4 victories.
+    `,
   },
   {
     title: "NWSL at the 2023 World Cup",
@@ -58,12 +113,12 @@ const CARDS = [
       "https://github.com/agale123/soccer-analytics/tree/main/world-cup-rosters",
     twitter: "https://twitter.com/agale137/status/1678769142453932032",
     desc: `
-          Half of the teams in their years Women's World Cup feature an NWSL
-          player. The United States has teh most representation by far, but both
-          Brazil and Canada have very good representation in the NWSL. The OL
-          Reign and Washington Spirit both have the most players featured in the
-          World Cup.
-        `,
+      Half of the teams in their years Women's World Cup feature an NWSL
+      player. The United States has teh most representation by far, but both
+      Brazil and Canada have very good representation in the NWSL. The OL
+      Reign and Washington Spirit both have the most players featured in the
+      World Cup.
+    `,
   },
   {
     title: "USWNT Pairwise Minutes",
@@ -72,13 +127,13 @@ const CARDS = [
       "https://github.com/agale123/soccer-analytics/tree/main/uswnt-pairings",
     twitter: "https://twitter.com/agale137/status/1677311644391837696",
     desc: `
-          See how many minutes each pair of players on the USWNT roster have
-          played together since the last Olympics in 2021. Darker lines indicate
-          more shared minutes. You can see which players and combinations of
-          players have a lot of experience together at the national team level.
-          I also posted followups that highlighted only the lines from a single
-          player to get a better view of who they have played with.
-        `,
+      See how many minutes each pair of players on the USWNT roster have
+      played together since the last Olympics in 2021. Darker lines indicate
+      more shared minutes. You can see which players and combinations of
+      players have a lot of experience together at the national team level.
+      I also posted followups that highlighted only the lines from a single
+      player to get a better view of who they have played with.
+    `,
   },
   {
     title: "200 NWSL Matches",
@@ -86,14 +141,14 @@ const CARDS = [
     github: "https://github.com/agale123/soccer-analytics/tree/main/lu-barnes",
     link: "https://barnes.alisongale.com",
     desc: `
-        To commemorate Lauren Barnes being the first player to hit 200 regular
-        season appearances I created a scrollable visualization to highlight
-        her accomplishments. She has played over 17,000 minutes, helped earn
-        three NWSL Shields, and she has been a longtime captain of the team.
-        This visualization shows all the Reign games since 2013 and highlights
-        different statistics as you scroll. Barnes has scored 2 goals and
-        contributed to 58 shutouts.
-      `,
+      To commemorate Lauren Barnes being the first player to hit 200 regular
+      season appearances I created a scrollable visualization to highlight
+      her accomplishments. She has played over 17,000 minutes, helped earn
+      three NWSL Shields, and she has been a longtime captain of the team.
+      This visualization shows all the Reign games since 2013 and highlights
+      different statistics as you scroll. Barnes has scored 2 goals and
+      contributed to 58 shutouts.
+    `,
   },
   {
     title: "Points Season Comparison",

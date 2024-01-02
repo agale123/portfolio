@@ -14,6 +14,7 @@ const paths = [
   "quilt_platter.jpg",
   "tie_dye.jpg",
   "teal_baby.jpg",
+  "soccer_hat.jpg",
 ];
 
 const columnHeights = [0, 0, 0];
