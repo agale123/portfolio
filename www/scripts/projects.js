@@ -10,6 +10,19 @@ const CARDS = [
     },
     */
   {
+    title: "Geographic Distribution of Teams",
+    img: "nearest_albers.png",
+    twitter: "https://twitter.com/agale137/status/1749436631117926744",
+    github: "https://github.com/agale123/soccer-analytics/tree/main/stadiums",
+    desc: `
+      As the NWSL has continued to grow, more fans are close to a team. I wanted
+      to visualize how teams are spread across the country and which areas are
+      furthest from a team. While this doesn't take into account population
+      density, it is interesting to see how Utah filled in a big gap in the
+      center of the US.
+    `,
+  },
+  {
     title: "Evolution of a League",
     img: "nwsl_evolution.png",
     twitter: "https://twitter.com/agale137/status/1732404885306438044",

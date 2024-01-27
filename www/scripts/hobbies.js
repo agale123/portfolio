@@ -1,4 +1,6 @@
 const paths = [
+  "peach_baby.jpg",
+  "triangles_quilt.jpg",
   "abstract_sunrise.jpg",
   "penguin_party.jpg",
   "double_diamond.jpg",
