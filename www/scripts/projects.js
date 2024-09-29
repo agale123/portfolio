@@ -10,6 +10,57 @@ const CARDS = [
     },
     */
   {
+    title: "Temperature at Kickoff",
+    img: "temp_at_kickoff.jpeg",
+    twitter: "https://twitter.com/agale137/status/1752704825937244434",
+    github: "https://github.com/agale123/soccer-analytics/tree/main/weather",
+    desc: `
+      In recent seasons, there have been many games scheduled during very hot
+      periods of the day or year. Some cities like Houston or Orlando are hot 
+      year round while others like Seattle tend to be much cooler at kickoff.
+      Temperature is calculated as the five-year average temperature at 
+      kickoff for each match.
+    `,
+  },
+  {
+    title: "Remaining Difficulty",
+    img: "remaining_difficulty.png",
+    twitter: "https://twitter.com/agale137/status/1834242274928328923",
+    github: "https://github.com/agale123/soccer-analytics/blob/main/misc/schedule_difficulty.ipynb",
+    desc: `
+      With just a few weeks left in the season, the difficulty of remaining
+      games will have a big impact on which teams make the playoffs. This
+      highlights which teams are mostly playing higher or lower ranked teams.
+      Variations were made to weight teams by points rather than rank.
+    `,
+  },
+  {
+    title: "NWSL Stadiums",
+    img: "nwsl_stadiums.jpeg",
+    twitter: "https://twitter.com/agale137/status/1767195848235258026",
+    github: "https://github.com/agale123/soccer-analytics/tree/main/stadiums",
+    desc: `
+      Over the years, there have been games at over 30 stadiums. Some games were
+      one-offs while one stadium (Providence Park) has hosted games for the
+      entire history of the league. This shows some interesting statistics like
+      the elevation of the stadium (Utah having the highest), stadium capacity,
+      and average goals.
+    `,
+  },
+  {
+    title: "Draft Pick Experience",
+    img: "draft_pick_experience.jpeg",
+    twitter: "https://twitter.com/agale137/status/1796184336384884846",
+    github: "https://github.com/agale123/soccer-analytics/tree/main/draft",
+    desc: `
+      Summary of how many draft picks from 2024 were signed after the first ten
+      games of the season and how many minutes those players have gotten. Most
+      of the first round draft picks have gotten good minutes and all but five
+      of the draft picks from the first three rounds have been signed. There 
+      have also been some standouts who were drafted late.
+    `,
+  },
+  {
     title: "Geographic Distribution of Teams",
     img: "nearest_albers.png",
     twitter: "https://twitter.com/agale137/status/1749436631117926744",
@@ -180,7 +231,7 @@ const CARDS = [
   {
     title: "1,000 NWSL Matches",
     img: "1000_matches.png",
-    github: "https://github.com/agale123/soccer-analytics/tree/main/1000-games",
+    github: "https://github.com/agale123/soccer-analytics/tree/main/archive/2023/1000-games",
     twitter: "https://twitter.com/agale137/status/1652488060385525760",
     desc: `
       The Racing Louisville v OL Reign game on April 29, 2023 marked the 1,000th

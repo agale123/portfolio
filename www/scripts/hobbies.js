@@ -2,6 +2,7 @@ const paths = [
   "peach_baby.jpg",
   "triangles_quilt.jpg",
   "abstract_sunrise.jpg",
+  "australia_new_zealand.jpg",
   "penguin_party.jpg",
   "double_diamond.jpg",
   "glass_vase.JPG",
