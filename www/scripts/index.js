@@ -7,7 +7,7 @@ for (const card of CARDS) {
   cardEl.innerHTML = `
     <div class="overlay">${PLUS}</div>
     <div class="contents">
-      <img src="images/${card.img}" />
+      <img src="images/index/${card.img}" />
       <div class="details">
         ${CLOSE}
         <h3>${card.title}</h3>
@@ -17,7 +17,7 @@ for (const card of CARDS) {
         <div class="links">
           ${card.link ? anchor(card.link, LINK) : ""}
           ${card.github ? anchor(card.github, GITHUB) : ""}
-          ${card.twitter ? anchor(card.twitter, TWITTER) : ""}
+          <!-- ${card.twitter ? anchor(card.twitter, TWITTER) : ""} -->
         </div>
       </div>
     </div>

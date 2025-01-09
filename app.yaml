@@ -7,6 +7,11 @@ handlers:
   upload: www/index.html
   secure: always
 
+- url: /wta
+  static_files: www/wta.html
+  upload: www/wta.html
+  secure: always
+
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)

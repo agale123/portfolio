@@ -10,6 +10,20 @@ const CARDS = [
     },
     */
   {
+    title: "Possible Playoff Finishes",
+    img: "possible_finishes.png",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/playoff-constraints",
+    desc: `
+        Towards the end of the 2024 NWSL season it became clear that teams were
+        clustered into different groups. This visualization used a utility I
+        wrote that calculated the highest and lowest a team could finish. This
+        showed that 1st and 5th were clinched so there were 3 teams fighting for
+        2nd place and then another set of teams fighting for the last few
+        playoff spots.
+      `,
+  },
+  {
     title: "Temperature at Kickoff",
     img: "temp_at_kickoff.jpeg",
     twitter: "https://twitter.com/agale137/status/1752704825937244434",
@@ -26,7 +40,8 @@ const CARDS = [
     title: "Remaining Difficulty",
     img: "remaining_difficulty.png",
     twitter: "https://twitter.com/agale137/status/1834242274928328923",
-    github: "https://github.com/agale123/soccer-analytics/blob/main/misc/schedule_difficulty.ipynb",
+    github:
+      "https://github.com/agale123/soccer-analytics/blob/main/misc/schedule_difficulty.ipynb",
     desc: `
       With just a few weeks left in the season, the difficulty of remaining
       games will have a big impact on which teams make the playoffs. This
@@ -231,7 +246,8 @@ const CARDS = [
   {
     title: "1,000 NWSL Matches",
     img: "1000_matches.png",
-    github: "https://github.com/agale123/soccer-analytics/tree/main/archive/2023/1000-games",
+    github:
+      "https://github.com/agale123/soccer-analytics/tree/main/archive/2023/1000-games",
     twitter: "https://twitter.com/agale137/status/1652488060385525760",
     desc: `
       The Racing Louisville v OL Reign game on April 29, 2023 marked the 1,000th
